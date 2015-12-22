@@ -1,0 +1,17 @@
+alias g='git'
+
+alias hop='cd ..;cd -'
+alias cdc='cd ~/code/'
+alias dskill='find . -name .DS_Store -exec rm -rf {} \;'
+
+# Simple one-line ruby server on port 8000 in the current directory
+alias preview='ruby -rwebrick -e"WEBrick::HTTPServer.new(:Port => 8000, :DocumentRoot => Dir.pwd).start"'
+
+alias be='bundle exec'
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# Flush Directory Service cache
+alias dsflush="dscacheutil -flushcache && killall -HUP mDNSResponder"
