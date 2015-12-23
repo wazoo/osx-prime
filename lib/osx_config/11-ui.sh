@@ -38,16 +38,16 @@ defaults write com.apple.dock wvous-bl-corner -int 10
 defaults write com.apple.dock wvous-bl-modifier -int 0
 
 # Install Base16 Tomorrow Theme
-cp .cache/Base16Tomorrow.clr ~/Library/Colors/
+cp .cache/Base16Tomorrow.clr $HOME/Library/Colors/
 
 # Dark UI Theme
-defaults write ~/Library/Preferences/.GlobalPreferences AppleInterfaceStyle -string "Dark"
+defaults write $HOME/Library/Preferences/.GlobalPreferences AppleInterfaceStyle -string "Dark"
 
 # Click on scrollbar goes to where you clicked, as it should be
-defaults write ~/Library/Preferences/.GlobalPreferences AppleScrollerPagingBehavior -bool true
+defaults write $HOME/Library/Preferences/.GlobalPreferences AppleScrollerPagingBehavior -bool true
 
 # Turn off that dumb mouse wiggle thing
-defaults write ~/Library/Preferences/.GlobalPreferences CGDisableCursorLocationMagnification -bool YES
+defaults write $HOME/Library/Preferences/.GlobalPreferences CGDisableCursorLocationMagnification -bool YES
 
 # Modify the menubar items
 defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/AirPort.menu"

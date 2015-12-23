@@ -4,10 +4,10 @@ alias gpom='git push origin master'
 alias gca='git commit -a -m '
 alias lll='ls -la'
 
-alias update-prime='cd ~/.osx-prime;git pull'
+alias update-prime='cd $HOME/.osx-prime;git pull'
 
 alias hop='cd ..;cd -'
-alias cdc='cd ~/code/'
+alias cdc='cd $HOME/code/'
 alias dskill='find . -name .DS_Store -exec rm -rf {} \;'
 
 # Simple one-line ruby server on port 8000 in the current directory

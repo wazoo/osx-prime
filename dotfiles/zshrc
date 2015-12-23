@@ -11,10 +11,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Aliases
-source ~/.aliases
+source $HOME/.aliases
 # Some defalt ENV Variables
-source ~/.env_vars
+source $HOME/.env_vars
 # Handy functions
-source ~/.functions
+source $HOME/.functions
 
 eval "$(rbenv init -)"

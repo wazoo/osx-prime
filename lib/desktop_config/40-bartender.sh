@@ -3,7 +3,7 @@
 
 
 
-plist='/Users/wazoo/Library/Preferences/com.surteesstudios.Bartender.plist'
+plist="$HOME/Library/Preferences/com.surteesstudios.Bartender.plist"
 
 /usr/libexec/PlistBuddy -c "Set :licenseHoldersName $BARTENDER_NAME" $plist
 /usr/libexec/PlistBuddy -c "Set :license $BARTENDER_1_LIC" $plist
@@ -76,4 +76,4 @@ plist='/Users/wazoo/Library/Preferences/com.surteesstudios.Bartender.plist'
 /usr/libexec/PlistBuddy -c "Add :appSettings:com.mizage.direct.Divvy:updateDisplayTime integer 5" $plist
 
 # Open to install Helper
-open ~/Applications/Bartender\ 2.app
+open $HOME/Applications/Bartender\ 2.app

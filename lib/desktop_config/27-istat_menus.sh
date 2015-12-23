@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-plist='/Users/wazoo/Library/Preferences/com.bjango.istatmenus.plist'
-extras_plist='/Users/wazoo/Library/Preferences/com.bjango.istatmenus5.extras.plist'
+plist="$HOME/Library/Preferences/com.bjango.istatmenus.plist"
+extras_plist="$HOME/Library/Preferences/com.bjango.istatmenus5.extras.plist"
 
 # Install License
 /usr/libexec/PlistBuddy -c "Set :license5 $ISTAT_LIC" $plist
@@ -29,4 +29,4 @@ extras_plist='/Users/wazoo/Library/Preferences/com.bjango.istatmenus5.extras.pli
 /usr/libexec/PlistBuddy -c "Set :DropdownTheme 1" $extras_plist
 
 # To Install helper
-open ~/Applications/iStat Menus.app
+open $HOME/Applications/iStat Menus.app

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-plist = "$HOME/Library/Preferences/com.mizage.direct.Divvy.plist"
+plist="$HOME/Library/Preferences/com.mizage.direct.Divvy.plist"
 
 /usr/libexec/PlistBuddy -c "Set :kXMRegCode $DIVVY_NAME" $plist
 /usr/libexec/PlistBuddy -c "Set :kXMRegName $DIVVY_LIC" $plist

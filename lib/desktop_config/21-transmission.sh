@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-# Use `~/transfers` to store incomplete downloads
+# Use `$HOME/transfers` to store incomplete downloads
 defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
 defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/transfers"
 # Don’t prompt for confirmation before downloading

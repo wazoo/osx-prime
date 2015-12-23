@@ -8,6 +8,8 @@ function process_directory {
   done
   wait
 }
+source 'lib/01-functions.sh'
+source "$HOME/.osx-prime/licenses.sh"
 process_directory 'cli_config'
 process_directory 'desktop_config'
 process_directory 'osx_config'

@@ -1,92 +1,96 @@
 #!/usr/bin/env bash
+shopt -s nocasematch
+
 
 # Core Packages
-apm install atom-gpg
-apm install atom-html-preview
-apm install color-picker
-apm install editorconfig
-apm install emmet
-apm install file-icons
-apm install html2haml
-apm install minimap
-apm install pigments
-apm install markdown-toc
-apm install merge-conflicts
-apm install bottom-dock
-apm install open-recent
-apm install todo-show
-apm install autoclose-html
-apm install git-plus
-apm install sublime-style-column-selection
-apm install travis-ci-status
-apm install terminal-plus
+atom_install 'atom-gpg'
+atom_install 'atom-html-preview'
+atom_install 'color-picker'
+atom_install 'editorconfig'
+atom_install 'emmet'
+atom_install 'file-icons'
+atom_install 'html2haml'
+atom_install 'minimap'
+atom_install 'pigments'
+atom_install 'markdown-toc'
+atom_install 'merge-conflicts'
+atom_install 'bottom-dock'
+atom_install 'open-recent'
+atom_install 'todo-show'
+atom_install 'autoclose-html'
+atom_install 'git-plus'
+atom_install 'sublime-style-column-selection'
+atom_install 'travis-ci-status'
+atom_install 'terminal-plus'
 
 #Language Defs
-apm install default-language
-apm install language-ansible
-apm install language-puppet
-apm install language-slim
-apm install language-terraform
-apm install language-gherkin
-apm install language-dots
-apm install language-hcl
-apm install language-awk
-apm install language-tmux
+atom_install 'default-language'
+atom_install 'language-ansible'
+atom_install 'language-puppet'
+atom_install 'language-slim'
+atom_install 'language-terraform'
+atom_install 'language-gherkin'
+atom_install 'language-dots'
+atom_install 'language-hcl'
+atom_install 'language-awk'
+atom_install 'language-tmux'
 
 #Themes/UI
-apm install nucleus-dark-ui
-apm install seti-ui
-apm install seti-icons
+atom_install 'nucleus-dark-ui'
+atom_install 'seti-ui'
+atom_install 'seti-icons'
 
 # Beautifier
-apm install atom-beautify
-sudo gem install htmlbeautifier
-sudo gem install ruby-beautify
+atom_install 'atom-beautify'
+gem_install 'htmlbeautifier'
+gem_install 'ruby-beautify'
 
 #Aligner
-apm install aligner
-apm install aligner-ruby
-apm install aligner-css
-apm install aligner-scss
-apm install aligner-puppet
+atom_install 'aligner'
+atom_install 'aligner-ruby'
+atom_install 'aligner-css'
+atom_install 'aligner-scss'
+atom_install 'aligner-puppet'
 
 # Linters and their requirements
-apm install linter
-apm install linter-manager
-apm install minimap-linter
+atom_install 'linter'
+atom_install 'linter-manager'
+atom_install 'minimap-linter'
 #CSS
-apm install linter-csslint
-sudo npm install --global csslint
+atom_install 'linter-csslint'
+npm_install 'csslint'
 #Coffee Script
-apm install linter-coffeelint
-sudo npm install --global coffeelint
+atom_install 'linter-coffeelint'
+npm_install 'coffeelint'
 #Go
-apm install linter-golinter
+atom_install 'linter-golinter'
 go get -u github.com/golang/lint/golint
 #HAML
-apm install linter-haml
-sudo gem install haml_lint
+atom_install 'linter-haml'
+gem_install 'haml_lint'
 #Markdown
-apm install linter-markdownlint
-sudo gem install mdl
+atom_install 'linter-markdownlint'
+gem_install 'mdl'
 #Ruby
-apm install linter-ruby
-apm install linter-rubocop
-sudo gem install rubocop
+atom_install 'linter-ruby'
+atom_install 'linter-rubocop'
+gem_install 'rubocop'
 #SASS/SCSS
-apm install linter-sass-lint
-sudo npm install --global sass-lint
+atom_install 'linter-sass-lint'
+npm_install 'sass-lint'
 #JSON
-apm install linter-jsonlint
-sudo npm install --global jsonlint
+atom_install 'linter-jsonlint'
+npm_install 'jsonlint'
 #XML
-apm install linter-xmllint
+atom_install 'linter-xmllint'
 #YAML
-apm install linter-linter-js-yaml
-sudo npm install --global yaml-js
+atom_install 'linter-js-yaml'
+npm_install 'yaml-js'
 #Puppet
-apm install linter-puppet-lint
-sudo gem install puppet-lint
+atom_install 'linter-puppet-lint'
+gem_install 'puppet-lint'
 #Ansible
-apm install linter-ansible-linting
-pip install ansible-lint
+atom_install 'linter-ansible-linting'
+pip_install 'ansible-lint'
+
+shopt -u nocasematch

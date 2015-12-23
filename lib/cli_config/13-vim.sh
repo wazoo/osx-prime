@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 
-mkdir -p $HOME/.vim/autoload $HOME/.vim/bundle && \
-curl -LSso $HOME/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+if [ ! -d "$HOME/.vim/autoload" ]; then
+  mkdir -p $HOME/.vim/autoload
+  curl -LSso $HOME/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+fi
 
-cd $HOME/.vim/bundle
-git clone https://github.com/wazoo/osx-prime-vimplugins .
+if [ ! -d "$HOME/.vim/bundle" ]; then
+  mkdir -p $HOME/.vim/bundle
+  cd $HOME/.vim/bundle
+  git clone https://github.com/wazoo/osx-prime-vimplugins .
+fi

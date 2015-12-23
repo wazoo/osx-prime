@@ -1,24 +1,45 @@
 #!/usr/bin/env bash
 
 # Clone Repo
-git clone https://github.com/wazoo/osx-prime $HOME/.osx-prime
+if [ ! -d "$HOME/.osx-prime" ]; then
+  git clone https://github.com/wazoo/osx-prime $HOME/.osx-prime
+fi
 
 # Global Env Vars
-ln -s $(pwd)/.osx-prime/dotfiles/env_vars $HOME/.env_vars
+if [ ! -h $HOME/.env_vars ]; then
+  ln -s $(pwd)/.osx-prime/dotfiles/env_vars $HOME/.env_vars
+fi
+
 # Global Aliases
-ln -s $(pwd)/.osx-prime/dotfiles/aliases $HOME/.aliases
+if [ ! -h $HOME/.aliases ]; then
+  ln -s $(pwd)/.osx-prime/dotfiles/aliases $HOME/.aliases
+fi
 # Global Functions
-ln -s $(pwd)/.osx-prime/dotfiles/functions $HOME/.functions
+if [ ! -h $HOME/.functions ]; then
+  ln -s $(pwd)/.osx-prime/dotfiles/functions $HOME/.functions
+fi
 # Global Editorconfig
-ln -s $(pwd)/.osx-prime/dotfiles/editorconfig $HOME/.editorconfig
+if [ ! -h $HOME/.editorconfig ]; then
+  ln -s $(pwd)/.osx-prime/dotfiles/editorconfig $HOME/.editorconfig
+fi
 
 # Global Git Config
-ln -s $(pwd)/.osx-prime/dotfiles/gitignore $HOME/.gitignore
-ln -s $(pwd)/.osx-prime/dotfiles/gitconfig $HOME/.gitconfig
+if [ ! -h $HOME/.gitignore ]; then
+  ln -s $(pwd)/.osx-prime/dotfiles/gitignore $HOME/.gitignore
+fi
+if [ ! -h $HOME/.gitconfig ]; then
+  ln -s $(pwd)/.osx-prime/dotfiles/gitconfig $HOME/.gitconfig
+fi
 
 # Multiplexers
-ln -s $(pwd)/.osx-prime/dotfiles/screenrc $HOME/.screenrc
-ln -s $(pwd)/.osx-prime/dotfiles/tmux.conf $HOME/.tmux.conf
+if [ ! -h $HOME/.screenrc ]; then
+  ln -s $(pwd)/.osx-prime/dotfiles/screenrc $HOME/.screenrc
+fi
+if [ ! -h $HOME/.tmux.conf ]; then
+  ln -s $(pwd)/.osx-prime/dotfiles/tmux.conf $HOME/.tmux.conf
+fi
 
-mkdir $HOME/.atom/
-cp dotfiles/atom/atomconfig.cson $HOME/.atom/atomconfig.cson
+if [ ! -d "$HOME/.atom" ]; then
+  mkdir $HOME/.atom/
+  cp dotfiles/atom/atomconfig.cson $HOME/.atom/atomconfig.cson
+fi

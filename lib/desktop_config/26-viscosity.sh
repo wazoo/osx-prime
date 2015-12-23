@@ -8,4 +8,4 @@ defaults write com.viscosityvpn.Viscosity FirstRun -bool false
 
 
 # Launch to install Helper
-open open ~/Applications/Viscosity.app
+open open $HOME/Applications/Viscosity.app

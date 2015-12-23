@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-mkdir -p ~/code/personal
-mkdir -p ~/code/work
-mkdir -p ~/code/foss
-mkdir -p ~/code/gocode/bin
+mkdir -p $HOME/code/personal
+mkdir -p $HOME/code/work
+mkdir -p $HOME/code/foss
+mkdir -p $HOME/code/gocode/bin
 
-mkdir -p ~/transfers
-mkdir -p ~/working
+mkdir -p $HOME/transfers
+mkdir -p $HOME/working
