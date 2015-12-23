@@ -43,3 +43,6 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[user]
+	name = Ben Thomas
+	email = github@bigredgiraffe.com

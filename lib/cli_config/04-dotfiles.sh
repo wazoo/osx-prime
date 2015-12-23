@@ -2,21 +2,21 @@
 
 
 # Global Env Vars
-cp dotfiles/env_vars ~/.env_vars
+ln -s $(pwd)dotfiles/env_vars $HOME/.env_vars
 # Global Aliases
-cp dotfiles/aliases ~/.aliases
+ln -s $(pwd)dotfiles/aliases $HOME/.aliases
 # Global Functions
-cp dotfiles/functions ~/.functions
+ln -s $(pwd)dotfiles/functions $HOME/.functions
 # Global Editorconfig
-cp dotfiles/editorconfig ~/.editorconfig
+ln -s $(pwd)dotfiles/editorconfig $HOME/.editorconfig
 
 # Global Git Config
-cp dotfiles/gitignore ~/.gitignore
-cp dotfiles/gitconfig ~/.gitconfig
+ln -s $(pwd)dotfiles/gitignore $HOME/.gitignore
+ln -s $(pwd)dotfiles/gitconfig $HOME/.gitconfig
 
 # Multiplexers
-cp dotfiles/screenrc ~/.screenrc
-cp dotfiles/tmux.conf ~/.tmux.conf
+ln -s $(pwd)dotfiles/screenrc $HOME/.screenrc
+ln -s $(pwd)dotfiles/tmux.conf $HOME/.tmux.conf
 
-mkdir ~/.atom/
-cp dotfiles/atom/atomconfig.cson ~/.atom/atomconfig.cson
+mkdir $HOME/.atom/
+cp dotfiles/atom/atomconfig.cson $HOME/.atom/atomconfig.cson

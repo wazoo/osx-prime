@@ -18,13 +18,20 @@ apm install todo-show
 apm install autoclose-html
 apm install git-plus
 apm install sublime-style-column-selection
+apm install travis-ci-status
+apm install terminal-plus
+
 #Language Defs
+apm install default-language
 apm install language-ansible
 apm install language-puppet
 apm install language-slim
 apm install language-terraform
 apm install language-gherkin
-apm install travis-ci-status
+apm install language-dots
+apm install language-hcl
+apm install language-awk
+apm install language-tmux
 
 #Themes/UI
 apm install nucleus-dark-ui
