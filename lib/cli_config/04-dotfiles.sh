@@ -19,4 +19,4 @@ cp dotfiles/screenrc ~/.screenrc
 cp dotfiles/tmux.conf ~/.tmux.conf
 
 mkdir ~/.atom/
-cp dotfiles/atomconfig.cson ~/.atom/atomconfig.cson
+cp dotfiles/atom/atomconfig.cson ~/.atom/atomconfig.cson
