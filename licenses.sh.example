@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# This is an example license file
+export TRANSMIT_LIC=""
+
+export BARTENDER_2_LIC=""
+export BARTENDER_1_LIC=""
+export BARTENDER_NAME=""
+
+export AHJ_NAME=""
+export AHJ_LIC=""
+
+export ISTAT_LIC=""

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Useful utility scripts
-mdir ~/bin
+mkdir ~/bin
 echo <<END
 cd ~/code/personal/$1;
 END >> ~/bin/cdcp
@@ -14,3 +14,13 @@ END >> ~/bin/cdcb
 echo <<END
 /Applications/Sublime Text.app/Contents/SharedSupport/bin/subl
 END >> ~/bin/subl
+echo <<END
+sudo pmset displaysleepnow
+END >> ~/bin/dsleep
+
+echo <<END
+sudo pmset sleepnow
+END >> ~/bin/csleep
+
+
+chmod +x ~/bin/*

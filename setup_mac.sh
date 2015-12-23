@@ -14,7 +14,7 @@
 ##############################
 bash 'lib/00-prerequisites.sh'
 source 'lib/01-functions.sh'
-
+source './licenses.sh'
 ##############################
 #
 # CLI Apps Installation

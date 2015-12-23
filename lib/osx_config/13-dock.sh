@@ -20,3 +20,10 @@ defaults write com.apple.dock mineffect -string "scale"
 
 # Don’t animate opening applications from the Dock
 defaults write com.apple.dock launchanim -bool false
+
+# Display on left
+defaults write com.apple.dock orientation -string "left"
+
+# Make icons tiny
+defaults write com.apple.dock tilesize -int 16
+defaults write com.apple.dock largesize -int 60
