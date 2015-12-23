@@ -53,7 +53,7 @@ function pip_install () {
     pip install $1
   fi
 }
-/* cd wrappers */
+# cd wrappers
 function cdcp {
   if [ -d "$CODE/personal/$1" ]
   then
