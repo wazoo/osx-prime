@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+function process_directory {
+  find "$HOME/.osx-prime/lib/$1" -name '*.sh' -type f -exec basename {} \; |
+  while read script
+  do
+    echo "Executing: $1/$script"
+    bash "$HOME/.osx-prime/lib/$1/$script"
+  done
+  wait
+}
+process_directory 'cli_config'
+process_directory 'desktop_config'
+process_directory 'osx_config'

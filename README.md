@@ -23,4 +23,4 @@ sudo bash setup_mac.sh
 
 Once installed an alias is provided called `update-prime` that can be run from any directory that will update the repository in ~/.osx-prime.  This will not re-run any of the scripts but will update the dotfiles.  
 
-To re-run OSX settings scripts an alias is provided called `apply-prime` that will run all of the scripts in the _config directories, **be aware that this will squash any changes.**
+To re-run OSX settings scripts a script is provided (in ~/bin) called `apply-prime` that will run all of the scripts in the _config directories, **be aware that this will squash any changes.**

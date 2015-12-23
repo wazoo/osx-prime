@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+cd $HOME/code/$WORK_DIR/$1;
