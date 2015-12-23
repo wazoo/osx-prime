@@ -1,0 +1,44 @@
+"http://www.vi-improved.org/vimrc.php
+
+"pathogen
+"https://github.com/tpope/vim-pathogen
+call pathogen#infect()
+"nerdtree
+"autocmd vimenter * NERDTree
+"map <F2> :NERDTreeToggle<CR>
+"map <F8> :NERDTree<CR>
+"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif "auto close if nerdtree is the only thing open
+"solarize
+syntax enable
+set background=dark
+"colorscheme solarized
+"colorscheme Tomorrow-Night-Bright
+colorscheme Tomorrow-Night
+
+set cursorline "highlight cursor line
+set noerrorbells " don't make noise
+set novisualbell " don't blink
+set nostartofline " leave my cursor where it was
+set number "line numbers
+set numberwidth=5 " We are good up to 99999 lines
+set ruler
+
+set autoindent
+
+"fix tabs
+set expandtab "change tabs to spaces
+set tabstop=4 "number of spaces for the tab key
+set shiftwidth=4 "Number of spaces for a tab indent
+set softtabstop=4 "makes spaces feel like tabs for a backspace
+
+
+"search tweaks
+set showmatch
+set ignorecase
+
+set gdefault "sets /g default on regexes, /g to disable
+
+map <F1> wq
+
+"force 256 color terminal for iterm
+let &t_Co=256
