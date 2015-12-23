@@ -69,6 +69,11 @@ plist='/Users/wazoo/Library/Preferences/com.surteesstudios.Bartender.plist'
 /usr/libexec/PlistBuddy -c "Add :appSettings:com.tdesktop.Telegram:showForUpdates bool false" $plist
 /usr/libexec/PlistBuddy -c "Add :appSettings:com.tdesktop.Telegram:updateDisplayTime integer 5" $plist
 
+# Divvy
+/usr/libexec/PlistBuddy -c "Add :appSettings:com.mizage.direct.Divvy:controlled integer 1" $plist
+/usr/libexec/PlistBuddy -c "Add :appSettings:com.mizage.direct.Divvy:popupFix bool false" $plist
+/usr/libexec/PlistBuddy -c "Add :appSettings:com.mizage.direct.Divvy:showForUpdates bool false" $plist
+/usr/libexec/PlistBuddy -c "Add :appSettings:com.mizage.direct.Divvy:updateDisplayTime integer 5" $plist
 
 # Open to install Helper
 open ~/Applications/Bartender\ 2.app
