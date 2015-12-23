@@ -1,2 +1,7 @@
 #!/usr/bin/env bash
-cd $HOME/code/personal/$1;
+if [ -d $1 ]
+then
+  cd $CODE/personal/$1;
+else
+  echo "Unable to find project named $1 in $CODE/personal/"
+fi

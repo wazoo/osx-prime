@@ -1,2 +1,7 @@
 #!/usr/bin/env bash
-cd $HOME/code/beyondvm/$1;
+if [ -d $1 ]
+then
+  cd $CODE/beyondvm/$1;
+else
+  echo "Unable to find project named $1 in $CODE/beyondvm/"
+fi
