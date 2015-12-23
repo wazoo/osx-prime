@@ -4,7 +4,7 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
 done
 
 # Install .zshrc
-rm -rf ~/.zshrc
-cp -f dotfiles/zshrc ~/.zshrc
-
-cp -f dotfiles/zpreztorc ~/.zpreztorc
+rm -rf $HOME/.zshrc
+ln -s $(pwd)/.osx-prime/dotfiles/zshrc $HOME/.zshrc
+rm -rf $HOME/.zpreztorc
+ln -s $(pwd)/.osx-prime/dotfiles/zpreztorc $HOME/.zpreztorc
