@@ -50,5 +50,7 @@ defaults write ~/Library/Preferences/.GlobalPreferences AppleScrollerPagingBehav
 defaults write ~/Library/Preferences/.GlobalPreferences CGDisableCursorLocationMagnification -bool YES
 
 # Modify the menubar items
-
 defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/AirPort.menu"
+
+# Always show scrollbars
+defaults write NSGlobalDomain AppleShowScrollBars -string 'Always'

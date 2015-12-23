@@ -14,6 +14,7 @@ plist='/Users/wazoo/Library/Preferences/com.surteesstudios.Bartender.plist'
 
 
 # Pre-configure some hidden things.
+# controlled: 0 = do nothing, 1 = show in bartender, 2 = totally hide
 # Notification Center
 /usr/libexec/PlistBuddy -c "Set :appSettings:menuExtra.notificationcenter:controlled 1" $plist
 /usr/libexec/PlistBuddy -c "Set :appSettings:menuExtra.notificationcenter:popupFix 0" $plist
@@ -44,6 +45,12 @@ plist='/Users/wazoo/Library/Preferences/com.surteesstudios.Bartender.plist'
 /usr/libexec/PlistBuddy -c "Set :appSettings:com.apple.menuextra.volume:showForUpdates 0" $plist
 /usr/libexec/PlistBuddy -c "Set :appSettings:com.apple.menuextra.volume:updateDisplayTime 5" $plist
 
+# Clock
+/usr/libexec/PlistBuddy -c "Add :appSettings:com.apple.menuextra.clock:controlled integer 2" $plist
+/usr/libexec/PlistBuddy -c "Add :appSettings:com.apple.menuextra.clock:popupFix bool false" $plist
+/usr/libexec/PlistBuddy -c "Add :appSettings:com.apple.menuextra.clock:showForUpdates bool false" $plist
+/usr/libexec/PlistBuddy -c "Add :appSettings:com.apple.menuextra.clock:updateDisplayTime integer 5" $plist
+
 # Dropbox
 /usr/libexec/PlistBuddy -c "Add :appSettings:com.getdropbox.dropbox:controlled integer 1" $plist
 /usr/libexec/PlistBuddy -c "Add :appSettings:com.getdropbox.dropbox:popupFix bool false" $plist
@@ -51,7 +58,6 @@ plist='/Users/wazoo/Library/Preferences/com.surteesstudios.Bartender.plist'
 /usr/libexec/PlistBuddy -c "Add :appSettings:com.getdropbox.dropbox:updateDisplayTime integer 5" $plist
 
 # Viscosity
-plist='/Users/wazoo/Library/Preferences/com.surteesstudios.Bartender.plist'
 /usr/libexec/PlistBuddy -c "Add :appSettings:com.viscosityvpn.Viscosity:controlled integer 1" $plist
 /usr/libexec/PlistBuddy -c "Add :appSettings:com.viscosityvpn.Viscosity:popupFix bool false" $plist
 /usr/libexec/PlistBuddy -c "Add :appSettings:com.viscosityvpn.Viscosity:showForUpdates bool false" $plist

@@ -41,3 +41,6 @@ defaults write com.apple.screencapture type -string "png"
 
 # Change default shell to zsh
 chsh -s /bin/zsh
+
+# Allow locate on the cli
+sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist

@@ -28,7 +28,7 @@ zstyle ':prezto:load' pmodule \
   'terminal' \
   'editor' \
   'history' \
-  'zsh-syntax-highlighting' \
+  'syntax-highlighting' \
   'history-substring-search' \
   'directory' \
   'spectrum' \

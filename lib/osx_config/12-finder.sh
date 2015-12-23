@@ -3,8 +3,8 @@
 # Show the $HOME/Library folder
 chflags nohidden $HOME/Library
 
-# Show filename extensions
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+# Don't show all Show filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool false
 
 # Disable the warning when changing a file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
@@ -28,10 +28,14 @@ defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
+# Show icons for hard drives, servers, and removable media on the sidebar
+defaults write com.apple.sidebarlists systemitems -dict-add ShowEjectables -bool true
+defaults write com.apple.sidebarlists systemitems -dict-add ShowRemovable -bool true
+defaults write com.apple.sidebarlists systemitems -dict-add ShowServers -bool true
+defaults write com.apple.sidebarlists systemitems -dict-add ShowHardDisks -bool true
+
 # Set Home as the default location for new Finder windows
-# For other paths, use `PfLo` and `file:///full/path/here/`
-defaults write com.apple.finder NewWindowTarget -string "PfDe"
-defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
+defaults write com.apple.finder NewWindowTarget -string "PfHm"
 
 # Finder: disable window animations and Get Info animations
 defaults write com.apple.finder DisableAllAnimations -bool true

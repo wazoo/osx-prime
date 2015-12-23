@@ -27,3 +27,6 @@ defaults write com.apple.dock orientation -string "left"
 # Make icons tiny
 defaults write com.apple.dock tilesize -int 16
 defaults write com.apple.dock largesize -int 60
+
+# Prevent icons from bouncing
+defaults write com.apple.dock no-bouncing -bool true
