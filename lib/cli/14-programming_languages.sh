@@ -3,6 +3,7 @@
 ## Languages
 brew install go
 brew install python
+brew cask install java
 ### NPM
 brew install node
 brew install nodebrew
