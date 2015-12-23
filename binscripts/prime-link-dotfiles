@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+find "$HOME/.osx-prime/dotfiles" -type f -exec basename {} \; |
+while read dotfile
+do
+  echo "Force linking Dotfile: $dotfile"
+  rm -rf "$HOME/$dotfile"
+  ln -s "$HOME/.osx-prime/dotfiles/$dotfile" "$HOME/$dotfile"
+done

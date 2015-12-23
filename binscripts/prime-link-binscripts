@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+find "$HOME/.osx-prime/binscripts" -type f -exec basename {} \; |
+while read script
+do
+  echo "Force linking Binscript: $script"
+  rm -rf "$HOME/bin/$script"
+  ln -s "$HOME/.osx-prime/binscripts/$script" "$HOME/bin/$script"
+done
