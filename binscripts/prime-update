@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 cd $HOME/.osx-prime
 git pull
-source ~/.zshrc
+source $HOME/.zshrc
