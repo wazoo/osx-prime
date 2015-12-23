@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 if [ -d "$CODE/personal/$1" ]
 then
-  cd $CODE/personal/$1;
+  cd "$CODE/personal/$1"
 else
   echo "Unable to find project named $1 in $CODE/personal/"
 fi
