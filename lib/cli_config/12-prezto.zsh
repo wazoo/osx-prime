@@ -9,9 +9,9 @@ fi
 # Install .zshrc
 if [ ! -h $HOME/.zshrc]; then
   rm -rf $HOME/.zshrc
-  ln -s $(pwd)/.osx-prime/dotfiles/zshrc $HOME/.zshrc
+  ln -s $HOME/.osx-prime/dotfiles/zshrc $HOME/.zshrc
 fi
 if [ ! -h $HOME/.zpreztorc ]; then
   rm -rf $HOME/.zpreztorc
-  ln -s $(pwd)/.osx-prime/dotfiles/zpreztorc $HOME/.zpreztorc
+  ln -s $HOME/.osx-prime/dotfiles/zpreztorc $HOME/.zpreztorc
 fi
