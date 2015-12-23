@@ -4,7 +4,6 @@ alias gpom='git push origin master'
 alias gca='git commit -a -m '
 alias lll='ls -la'
 
-alias update-prime='cd $HOME/.osx-prime;git pull'
 
 alias hop='cd ..;cd -'
 alias cdc='cd $HOME/code/'
