@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-if [ -d $1 ]
+if [ -d "$CODE/beyondvm/$1" ]
 then
   cd $CODE/beyondvm/$1;
 else

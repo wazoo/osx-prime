@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-if [ -d $1 ]
+if [ -d "$CODE/personal/$1" ]
 then
   cd $CODE/personal/$1;
 else

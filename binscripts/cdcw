@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-if [ -d $1 ]
+if [ -d "$CODE/$WORK_DIR/$1" ]
 then
   cd $CODE/$WORK_DIR/$1;
 else
