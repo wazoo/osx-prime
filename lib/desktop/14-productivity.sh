@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
 # Productivity Apps
-brew cask install dropbox
-brew cask install cheatsheet
-brew cask install divvy
+brew cask install --appdir="/Applications" dropbox
+brew cask install --appdir="/Applications" cheatsheet
+brew cask install --appdir="/Applications" divvy

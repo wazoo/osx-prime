@@ -4,11 +4,11 @@
 
 brew tap caskroom/fonts
 
-brew cask install font-anonymous-pro
-brew cask install font-anonymous-pro-for-powerline
-brew cask install font-droid-sans
-brew cask install font-droid-sans-mono
-brew cask install font-droid-sans-mono-for-powerline
-brew cask install font-inconsolata
-brew cask install font-inconsolata-for-powerline
-brew cask install font-input
+brew cask install --appdir="/Applications" font-anonymous-pro
+brew cask install --appdir="/Applications" font-anonymous-pro-for-powerline
+brew cask install --appdir="/Applications" font-droid-sans
+brew cask install --appdir="/Applications" font-droid-sans-mono
+brew cask install --appdir="/Applications" font-droid-sans-mono-for-powerline
+brew cask install --appdir="/Applications" font-inconsolata
+brew cask install --appdir="/Applications" font-inconsolata-for-powerline
+brew cask install --appdir="/Applications" font-input

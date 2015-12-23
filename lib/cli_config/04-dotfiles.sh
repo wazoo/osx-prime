@@ -14,5 +14,9 @@ cp dotfiles/editorconfig ~/.editorconfig
 cp dotfiles/gitignore ~/.gitignore
 cp dotfiles/gitconfig ~/.gitconfig
 
+# Multiplexers
 cp dotfiles/screenrc ~/.screenrc
 cp dotfiles/tmux.conf ~/.tmux.conf
+
+mkdir ~/.atom/
+cp dotfiles/atomconfig.cson ~/.atom/atomconfig.cson

@@ -2,8 +2,8 @@
 
 
 # Chat Apps
-brew cask install telegram
-brew cask install adium
-brew cask install skype
-brew cask install hipchat
-brew cask install google-hangouts
+brew cask install --appdir="/Applications" telegram
+brew cask install --appdir="/Applications" adium
+brew cask install --appdir="/Applications" skype
+brew cask install --appdir="/Applications" hipchat
+brew cask install --appdir="/Applications" google-hangouts

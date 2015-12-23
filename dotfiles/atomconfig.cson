@@ -1,0 +1,28 @@
+"*":
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "nucleus-dark-ui"
+      "base16-tomorrow-dark-theme"
+    ]
+  editor:
+    invisibles: {}
+    fontFamily: "Anonymous Pro"
+    showIndentGuide: true
+    showInvisibles: true
+  "atom-material-ui":
+    disableAnimations: true
+  "tool-bar":
+    iconSize: "16px"
+    position: "Left"
+  "tree-ignore": {}
+  "ruby-test":
+    specFramework: "rspec"
+    testFramework: "minitest"
+  "markdown-preview-plus": {}
+  "markdown-preview": {}
+  "base16-syntax":
+    scheme: "Tomorrow"
+  "atom-gpg": {}
+  minimap: {}

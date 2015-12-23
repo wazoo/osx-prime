@@ -33,8 +33,8 @@ apm install seti-icons
 
 # Beautifier
 apm install atom-beautify
-gem install htmlbeautifier
-gem install ruby-beautify
+sudo gem install htmlbeautifier
+sudo gem install ruby-beautify
 
 #Aligner
 apm install aligner
@@ -49,37 +49,37 @@ apm install linter-manager
 apm install minimap-linter
 #CSS
 apm install linter-csslint
-npm install --global csslint
+sudo npm install --global csslint
 #Coffee Script
 apm install linter-coffeelint
-npm install --global coffeelint
+sudo npm install --global coffeelint
 #Go
 apm install linter-golinter
 go get -u github.com/golang/lint/golint
 #HAML
 apm install linter-haml
-gem install haml_lint
+sudo gem install haml_lint
 #Markdown
 apm install linter-markdownlint
-gem install mdl
+sudo gem install mdl
 #Ruby
 apm install linter-ruby
 apm install linter-rubocop
-gem install rubocop
+sudo gem install rubocop
 #SASS/SCSS
 apm install linter-sass-lint
-npm install --global sass-lint
+sudo npm install --global sass-lint
 #JSON
 apm install linter-jsonlint
-npm install --global jsonlint
+sudo npm install --global jsonlint
 #XML
 apm install linter-xmllint
 #YAML
 apm install linter-linter-js-yaml
-npm install --global yaml-js
+sudo npm install --global yaml-js
 #Puppet
 apm install linter-puppet-lint
-gem install puppet-lint
+sudo gem install puppet-lint
 #Ansible
 apm install linter-ansible-linting
 pip install ansible-lint
