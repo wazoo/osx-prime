@@ -1,4 +1,9 @@
 alias g='git'
+alias gpom='git push origin master'
+alias gca='git commit -a -m '
+alias lll='ls -la'
+
+alias update-prime='cd ~/.osx-prime;git pull;cd -'
 
 alias hop='cd ..;cd -'
 alias cdc='cd ~/code/'

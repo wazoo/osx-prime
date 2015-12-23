@@ -12,5 +12,6 @@ To Install:
 cd; curl -#L https://github.com/wazoo/osx-prime/tarball/master | tar -xzv -C $HOME/.osx-prime
 sudo bash setup_mac.sh
 ```
+This will subsiquently clone itself into ~/.osx-prime and link dotfiles from there.
 
 **Note:** you may have to type in sudo password several times.
