@@ -2,7 +2,7 @@
 # Usage: extract <file>
 # Description: extracts archived files / mounts disk images
 # Note: .dmg/hdiutil is Mac OS X-specific.
-extract () {
+function extract () {
     if [ -f $1 ]; then
         case $1 in
             *.tar.bz2)  tar -jxvf $1                        ;;
@@ -52,4 +52,29 @@ function pip_install () {
   else
     pip install $1
   fi
+}
+/* cd wrappers */
+function cdcp {
+  if [ -d "$CODE/personal/$1" ]
+  then
+    cd "$CODE/personal/$1"
+  else
+    echo "Unable to find project named $1 in $CODE/personal/"
+  fi
+}
+function cdcb {
+if [ -d "$CODE/beyondvm/$1" ]
+then
+  cd "$CODE/beyondvm/$1"
+else
+  echo "Unable to find project named $1 in $CODE/beyondvm/"
+fi
+}
+function cdcw {
+if [ -d "$CODE/$WORK_DIR/$1" ]
+then
+  cd "$CODE/$WORK_DIR/$1"
+else
+  echo "Unable to find project named $1 in $CODE/$WORK_DIR/"
+fi
 }
