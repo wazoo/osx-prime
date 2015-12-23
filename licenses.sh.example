@@ -11,3 +11,6 @@ export AHJ_NAME=""
 export AHJ_LIC=""
 
 export ISTAT_LIC=""
+
+export DIVVY_NAME=""
+export DIVVY_LIC=""
