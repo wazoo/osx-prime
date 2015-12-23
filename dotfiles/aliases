@@ -21,3 +21,5 @@ alias egrep='egrep --color=auto'
 
 # Flush Directory Service cache
 alias dsflush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+
+alias path="echo $PATH"

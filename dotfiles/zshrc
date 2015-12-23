@@ -16,3 +16,5 @@ source ~/.aliases
 source ~/.env_vars
 # Handy functions
 source ~/.functions
+
+eval "$(rbenv init -)"
