@@ -10,9 +10,9 @@ while read dotfile
 do
   if [ ! -h "$HOME/$dotfile"]; then
     echo "Linking Dotfile: $dotfile"
-    ln -s "$HOME/.osx-prime/dotfiles/$dotfile" "$HOME/$dotfile"
+    ln -s "$HOME/.osx-prime/dotfiles/$dotfile" "$HOME/.$dotfile"
   else
-    echo "Found existing dotfile link for $HOME/$dotfile"
+    echo "Found existing dotfile link for $HOME/.$dotfile"
   fi
 done
 
