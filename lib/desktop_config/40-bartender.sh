@@ -75,5 +75,12 @@ plist="$HOME/Library/Preferences/com.surteesstudios.Bartender.plist"
 /usr/libexec/PlistBuddy -c "Add :appSettings:com.mizage.direct.Divvy:showForUpdates bool false" $plist
 /usr/libexec/PlistBuddy -c "Add :appSettings:com.mizage.direct.Divvy:updateDisplayTime integer 5" $plist
 
+#Tweetbot
+/usr/libexec/PlistBuddy -c "Add :appSettings:com.tapbots.TweetbotMac:controlled integer 1" $plist
+/usr/libexec/PlistBuddy -c "Add :appSettings:com.tapbots.TweetbotMac:popupFix bool false" $plist
+/usr/libexec/PlistBuddy -c "Add :appSettings:com.tapbots.TweetbotMac:showForUpdates bool false" $plist
+/usr/libexec/PlistBuddy -c "Add :appSettings:com.tapbots.TweetbotMac:updateDisplayTime integer 5" $plist
+
+
 # Open to install Helper
 open $HOME/Applications/Bartender\ 2.app
