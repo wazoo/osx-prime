@@ -10,11 +10,10 @@ export HOME='/Users/wazoo'
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
-
-# Aliases
-source $HOME/.aliases
 # Some defalt ENV Variables
 source $HOME/.env_vars
+# Aliases
+source $HOME/.aliases
 # Handy functions
 source $HOME/.functions
 
