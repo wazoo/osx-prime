@@ -7,7 +7,7 @@ rm -rf $HOME/.rvm/gemsets/default.gems
 cp "dotfiles/rvm/gemsets/default.gems" $HOME/.rvm/gemsets/default.gems
 
 # Core Rubies
-rvm install 2.2
+rvm install 2.2.4
 rvm install 2.1
 rvm install 1.9.3
 
@@ -17,4 +17,4 @@ rvm install 1.9.3
 # rvm install jruby
 
 # Set default global ruby
-rvm --default use 2.2
+rvm --default use 2.2.4
