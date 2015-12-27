@@ -1,5 +1,6 @@
 alias g='git'
 alias gp='git push'
+alias gpo='git push origin '
 alias gpom='git push origin master'
 alias gca='git commit -a -m '
 alias lll='ls -la'
