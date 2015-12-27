@@ -17,3 +17,7 @@ export RBENV_GEMSETS="global"
 export WORK_DIR="work"
 
 export CODE="$HOME/code"
+
+# For Homebrew llvm
+export LDFLAGS="-L/usr/local/opt/llvm/lib"
+export CPPFLAGS="-I/usr/local/opt/llvm/include"

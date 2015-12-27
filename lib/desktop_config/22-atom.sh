@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
+
+# Disable case matching for bash to make package matching easier
 shopt -s nocasematch
 
+# Select global gemset
+rvm gemset use global
 
 # Core Packages
 atom_install 'atom-gpg'
