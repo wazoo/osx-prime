@@ -10,3 +10,9 @@ if [ ! -d "$HOME/.vim/bundle" ]; then
   cd $HOME/.vim/bundle
   git clone https://github.com/wazoo/osx-prime-vimplugins .
 fi
+
+if [ ! -d "$HOME/.vim/colors" ]; then
+  mkdir -p $HOME/.vim/colors
+  cd $HOME/.vim/colors
+  wget https://raw.githubusercontent.com/chriskempson/tomorrow-theme/master/vim/colors/Tomorrow-Night.vim
+fi

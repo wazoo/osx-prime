@@ -26,6 +26,7 @@ atom_install 'git-plus'
 atom_install 'sublime-style-column-selection'
 atom_install 'travis-ci-status'
 atom_install 'terminal-plus'
+atom_install 'remote-edit'
 
 #Language Defs
 atom_install 'default-language'
