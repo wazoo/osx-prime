@@ -7,3 +7,7 @@ do
   rm -rf "$HOME/.$dotfile"
   ln -s "$HOME/.osx-prime/dotfiles/$dotfile" "$HOME/.$dotfile"
 done
+
+echo "Force linking Bundler config:"
+rm -rf  "$HOME/.bundle/config"
+ln -s "$HOME/.osx-prime/dotfiles/bundle/config" "$HOME/.bundle/config"

@@ -20,5 +20,12 @@ if [ ! -d "$HOME/.atom" ]; then
   mkdir $HOME/.atom/
   cp dotfiles/atom/atomconfig.cson $HOME/.atom/atomconfig.cson
 else
-  echo "Found existing dotfile symlink for $HOME/.env_vars"
+  echo "Found existing dotdir for $HOME/.atom, skipping."
+fi
+
+if [ ! -d "$HOME/.bundle" ]; then
+  mkdir $HOME/.bundle/
+  cp dotfiles/bundle/config $HOME/.bundle/config
+else
+  echo "Found existing dotdir for $HOME/.bundle, skipping."
 fi

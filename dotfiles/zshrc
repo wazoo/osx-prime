@@ -5,6 +5,10 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 # if for some reason this gets reset, lets make sure it doesn't
+
+#Fix for stupid numpad enter button thing
+bindkey -s "^[OM" "^M"
+
 export HOME='/Users/wazoo'
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
